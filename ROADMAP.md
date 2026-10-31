@@ -11,8 +11,8 @@
 
 | # | Program | Folder | Concepts Covered | Status |
 |---|---------|--------|-----------------|--------|
-| 1 | `pe_header_parser.c` | `static-analysis/` | DOS/PE headers, sections (.text, .data), imports/exports, compilation timestamps | ⏳ Next |
-| 2 | `elf_header_parser.c` | `static-analysis/` | ELF ident, architecture, program headers, section headers, dynamic symbols | ⬜ |
+| 1 | `pe_header_parser.c` | `static-analysis/` | DOS/PE headers, sections (.text, .data), imports/exports, compilation timestamps | ✅ Done |
+| 2 | `elf_header_parser.c` | `static-analysis/` | ELF ident, architecture, program headers, section headers, dynamic symbols | ⏳ Next |
 | 3 | `section_entropy.c` | `static-analysis/` | Shannon entropy algorithm, detect packed/encrypted payloads (>7.0 entropy) | ⬜ |
 | 4 | `string_extractor.c` | `static-analysis/` | Extract ASCII and UTF-16LE strings (C2 URLs, IPs, commands, registry keys) | ⬜ |
 | 5 | `hash_validator.c` | `static-analysis/` | Compute raw MD5 & SHA-256 binary digests for threat feed matching | ⬜ |

@@ -18,4 +18,8 @@ add_library(threat_common STATIC common/utils.c)
 # Binary output destination
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+# Program 1: PE Header Parser
+add_executable(pe_parser static-analysis/pe_header_parser.c)
+target_link_libraries(pe_parser PRIVATE threat_common)
+
 message(STATUS "Configured c-threat-hunter build on ${CMAKE_SYSTEM_NAME}")

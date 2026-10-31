@@ -36,8 +36,18 @@ info:
 	@echo "  make integrity    Build Phase 4 (System Integrity tools)"
 	@echo "  make clean        Remove build artifacts and compiled binaries"
 
+all: pe_parser
+
+static: pe_parser
+
+pe_parser: $(BIN_DIR)/pe_parser$(EXT)
+
+$(BIN_DIR)/pe_parser$(EXT): static-analysis/pe_header_parser.c $(COMMON_SRC)
+	@if not exist $(BIN_DIR) $(MKDIR) $(BIN_DIR)
+	$(CC) $(CFLAGS) static-analysis/pe_header_parser.c $(COMMON_SRC) -o $@ $(LDFLAGS)
+
 clean:
 	$(RM) $(COMMON_OBJ)
 	$(RM) $(BIN_DIR)/*$(EXT)
 
-.PHONY: all info clean
+.PHONY: all info static pe_parser clean

@@ -3,7 +3,7 @@
 [![Language](https://img.shields.io/badge/Language-C11-00599C?logo=c&logoColor=white)](https://en.cppreference.com/w/c/11)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Programs](https://img.shields.io/badge/Programs-0%2F20-orange)](ROADMAP.md)
+[![Programs](https://img.shields.io/badge/Programs-1%2F20-brightgreen)](ROADMAP.md)
 
 > Low-level C programs for malware detection, binary inspection, and system threat hunting — built to understand operating system internals from the ground up.
 
@@ -103,11 +103,11 @@ gcc -Wall -Wextra -std=c11 -Icommon static-analysis/elf_header_parser.c common/u
 
 | Phase | Category | Programs | Status |
 |-------|----------|----------|--------|
-| 1 | Static Binary Analysis | 0/5 | ⏳ Up Next |
+| 1 | Static Binary Analysis | 1/5 | 🔄 In Progress |
 | 2 | Live Process Inspection | 0/5 | ⬜ Queued |
 | 3 | Memory Analysis & Heuristics | 0/5 | ⬜ Queued |
 | 4 | System Integrity & Persistence | 0/5 | ⬜ Queued |
-| **Total** | | **0/20** | |
+| **Total** | | **1/20** | |
 
 ---
 
